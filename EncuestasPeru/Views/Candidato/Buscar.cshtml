@@ -1,0 +1,123 @@
+﻿@model IEnumerable<EncuestasPeru.Models.CandidatoModel>
+
+@{
+    ViewBag.Title = "Buscar";
+}
+
+<h2>Buscar</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.cand_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cand_nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cand_ape_pat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cand_ape_mat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.part_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cand_link_fb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cand_link_twt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cand_link_inst)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cand_img_url)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cand_flg_prv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cand_ubigeo_prv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cand_flg_dst)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cand_ubigeo_dist)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cand_est_registro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cand_fec_registro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cand_user_id)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.cand_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cand_nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cand_ape_pat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cand_ape_mat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.part_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cand_link_fb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cand_link_twt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cand_link_inst)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cand_img_url)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cand_flg_prv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cand_ubigeo_prv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cand_flg_dst)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cand_ubigeo_dist)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cand_est_registro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cand_fec_registro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cand_user_id)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

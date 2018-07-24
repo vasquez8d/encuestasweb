@@ -6,11 +6,12 @@ using System.Web.Mvc;
 
 namespace EncuestasPeru.Controllers
 {
-    public class HomeController : Controller
+    public class EncuestasRegionesController : Controller
     {
+        // GET: EncuestasRegiones
         public ActionResult Index()
         {
             return View();
-        }        
+        }
     }
 }
